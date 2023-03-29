@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/white.css" />
+    <link rel="stylesheet" href="dist/theme/night.css" />
     <link rel="stylesheet" href="/style.css" />
 
     <!-- Theme used for syntax highlighted code -->
@@ -21,45 +21,200 @@
     <div class="reveal">
       <div class="slides">
         <!-- Slide 1 -->
-        <section data-markdown>
-          <textarea data-template>
-            # Welcome to [TailwindCSS](https://tailwindcss.com)
-          </textarea>
+        <section>
+          <h2>Welcome to <a href="https://tailwindcss.com">tailwindcss</a></h2>
         </section>
 
         <!-- Slide 2 -->
         <section>
-          <section data-markdown>
-            <textarea data-template>
-              ## hello
-            </textarea>
+          <section data-auto-animate>
+            <h2>What is TailwindCSS ???</h2>
           </section>
-          <section></section>
+
+          <section data-auto-animate>
+            <h2>What is <span style="color: #0ea5e9">Tailwind</span>CSS ???</h2>
+            <p>
+              A <span style="color: #0ea5e9">utility-first</span> CSS framework
+              packed with classes like <span style="color: #03a5e9">flex</span>,
+              <span style="color: #03a5e9">pt-4</span>,
+              <span style="color: #03a5e9">text-center</span> and
+              <span style="color: #03a5e9">rotate-90</span>
+              that can be composed to build any design, directly in your markup.
+            </p>
+          </section>
         </section>
 
         <!-- Slide 3 -->
-        <section></section>
+        <section>
+          <section data-auto-animate>
+            <h2>
+              <p>How to setup tailwindcss</p>
+              <div style="display: inline-flex; align-items: center">
+                <span>in a</span>
+                <img
+                  width="80"
+                  style="margin-right: 10px; margin-left: 10px"
+                  src="https://media2.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif?cid=6c09b952a5b1a2b266c481ef5f35884724ad995b7dedc386&rid=giphy.gif&ct=s"
+                  alt=""
+                />
+                <span>project</span>
+              </div>
+            </h2>
+          </section>
+
+          <section data-auto-animate>
+            <h2>
+              <p>How to setup tailwindcss</p>
+              <div style="display: inline-flex; align-items: center">
+                <span>in a</span>
+                <img
+                  width="80"
+                  style="margin-right: 10px; margin-left: 10px"
+                  src="https://media2.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif?cid=6c09b952a5b1a2b266c481ef5f35884724ad995b7dedc386&rid=giphy.gif&ct=s"
+                  alt=""
+                />
+                <span>project</span>
+              </div>
+            </h2>
+
+            <pre>
+              <code data-trim data-noescape>
+                mkcd my-app
+                npm create vite@latest . --template react
+                npm install
+              </code>
+            </pre>
+          </section>
+
+          <section data-auto-animate>
+            <h2>
+              <p>How to setup tailwindcss</p>
+              <div style="display: inline-flex; align-items: center">
+                <span>in a</span>
+                <img
+                  width="80"
+                  style="margin-right: 10px; margin-left: 10px"
+                  src="https://media2.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif?cid=6c09b952a5b1a2b266c481ef5f35884724ad995b7dedc386&rid=giphy.gif&ct=s"
+                  alt=""
+                />
+                <span>project</span>
+              </div>
+            </h2>
+
+            <pre>
+              <code data-trim data-noescape>
+                mkcd my-app
+                npm create vite@latest . --template react
+                npm install
+              </code>
+            </pre>
+
+            <pre>
+              <code data-trim data-noescape>
+                npm install -D tailwindcss postcss autoprefixer
+                npx tailwindcss init -p
+              </code>
+            </pre>
+
+            <small>above command will create a tailwind.config.cjs file</small>
+          </section>
+        </section>
 
         <!-- Slide 4 -->
-        <section></section>
+        <section>
+          <section data-auto-animate>
+            <h2>Configuring tailwind.config.cjs</h2>
+          </section>
+
+          <section data-auto-animate>
+            <h2>Configuring tailwind.config.cjs</h2>
+
+            <pre>
+              <code data-trim data-noescape>
+                /** @type {import('tailwindcss').Config} */
+                module.exports = {
+                  // content: []
+                  content: [
+                    "./index.html",
+                    "./src/**/*.{js,ts,jsx,tsx}",
+                  ],
+                  theme: {
+                    extend: {},
+                  },
+                  plugins: [],
+                }
+              </code>
+            </pre>
+          </section>
+        </section>
 
         <!-- Slide 5 -->
-        <section></section>
+        <section>
+          <section data-auto-animate>
+            <h4>and ...</h4>
+          </section>
+
+          <section data-auto-animate>
+            <h4>and ...</h4>
+            <p>we also have to tailwind classes to the index.css</p>
+          </section>
+
+          <section data-auto-animate>
+            <h4>and ...</h4>
+            <p>we also have to tailwind classes to the index.css</p>
+            <pre>
+              <code data-noescape data-trim>
+                //index.css
+
+                @tailwind base;
+                @tailwind components; 
+                @tailwind utilities;
+              </code>
+            </pre>
+          </section>
+        </section>
 
         <!-- Slide 6 -->
-        <section></section>
+        <section>
+          <section data-auto-animate>
+            <h4>
+              Congratulations we successfully added tailwind to our project.
+            </h4>
+          </section>
+          <section data-auto-animate>
+            <h4>
+              Congratulations we successfully added tailwind to our project.
+            </h4>
+            <img
+              src="https://lordicon.com/upload/icons/2022_09/KeFqCfBzmPCEuovZDfHBJ.gif"
+              alt=""
+            />
+          </section>
+        </section>
 
         <!-- Slide 7 -->
-        <section></section>
+        <section>
+          <section data-auto-animate>
+            <h4>useful vscode extensions</h4>
+          </section>
+
+          <section data-auto-animate>
+            <h4>useful vscode extensions</h4>
+            <img
+              src="https://tailwindcss.com/_next/static/media/intellisense.c22de782.png"
+              alt=""
+            />
+          </section>
+        </section>
 
         <!-- Slide 8 -->
-        <section></section>
+        <!-- <section></section> -->
 
         <!-- Slide 9 -->
-        <section></section>
+        <!-- <section></section> -->
 
         <!-- Slide 10 -->
-        <section></section>
+        <!-- <section></section> -->
       </div>
     </div>
 
